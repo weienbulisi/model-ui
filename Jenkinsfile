@@ -14,4 +14,7 @@ node {
       bat '''start javaw -jar ./target/crossgate-gateway-0.0.1-SNAPSHOT.jar'''
       echo "启动程序成功"
     }
+    stage('测试'){
+      bat ''' netstat -aon|findstr "8888"'''
+    }
 }
