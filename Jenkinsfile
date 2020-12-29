@@ -1,6 +1,5 @@
 node {
     stage('代码拉取'){
-     dir 
      echo '代码拉取';
     }
 
