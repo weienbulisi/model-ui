@@ -12,6 +12,7 @@ node {
     stage('项目启动'){
       bat '''dir'''
       bat '''cd ./target'''
+      bat '''dir'''
       bat '''docker build -t test:v1.2.6 .'''
       echo "启动程序成功"
     }
