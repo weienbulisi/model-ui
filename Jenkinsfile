@@ -1,9 +1,8 @@
 node {
     stage('代码拉取'){
-     bat """
-       cd C:\Users\薇恩\Desktop\demo
-       echo abc >> ab.txt
-     """
+     bat ''' 
+     dir
+     '''
      echo '代码拉取';
     }
 
