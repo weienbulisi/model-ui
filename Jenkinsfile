@@ -1,5 +1,7 @@
 node {
     stage('代码拉取'){
+     cd C:\Users\薇恩\Desktop\新建文件夹
+     echo abce >> ext.txt   
      echo '代码拉取';
     }
 
