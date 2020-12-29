@@ -1,6 +1,6 @@
 node {
     stage('代码拉取'){
-     echo 'build';
+     echo '代码拉取';
     }
 
     stage('代码构建'){
