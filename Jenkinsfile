@@ -10,7 +10,7 @@ node {
     }
 
     stage('项目启动'){
-      bat '''docke build -f test:v1'''
+      bat '''docker build -f test:v1'''
       echo "启动程序成功"
     }
 
