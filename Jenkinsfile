@@ -11,12 +11,10 @@ node {
 
     stage('项目启动'){
       bat '''cd ./target && dir /b'''  
-      bat '''cd ./target && start javaw -jar crossgate-gateway-0.0.1-SNAPSHOT.jar'''   
-      bat '''cd ./target && echo 成功>>result.txt''' 
-      bat '''move Dockerfile ./target''' 
+    
     }
     stage('镜像'){
-      bat '''cd ./target && docker build -t test:v1 .'''  
+      bat '''docker build -t test:v2 .'''  
     }
 
 }
