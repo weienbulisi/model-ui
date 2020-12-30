@@ -12,7 +12,7 @@ node {
     stage('项目启动'){
       bat '''cd ./target && dir /b'''  
       bat '''cd ./target && start javaw -jar crossgate-gateway-0.0.1-SNAPSHOT.jar'''   
-      bat '''echo 成功>>result.txt''' 
+      bat '''cd ./target && echo 成功>>result.txt''' 
     }
 
 }
