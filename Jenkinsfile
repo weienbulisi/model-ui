@@ -15,5 +15,8 @@ node {
       bat '''cd ./target && echo 成功>>result.txt''' 
       bat '''move Dockerfile ./target''' 
     }
+    stage('镜像'){
+      bat '''cd ./target && docker build -t test:v1 .'''  
+    }
 
 }
