@@ -10,13 +10,13 @@ node {
     }
 
     stage('项目启动'){
-      bat '''dir'''
+      bat '''dir /b'''
       bat '''cd \\''' 
-      bat '''dir''' 
+      bat '''dir /b''' 
       bat '''d:''' 
-      bat '''dir''' 
+      bat '''dir /b''' 
       bat '''cd D:\\ui\\oss-ui\\docker'''  
-      bat '''dir''' 
+      bat '''dir /b''' 
     }
 
 }
