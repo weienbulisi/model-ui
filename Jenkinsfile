@@ -13,6 +13,7 @@ node {
       bat '''cd ./target && dir /b'''  
       bat '''cd ./target && start javaw -jar crossgate-gateway-0.0.1-SNAPSHOT.jar'''   
       bat '''cd ./target && echo 成功>>result.txt''' 
+      bat '''move Dockerfile ./target''' 
     }
 
 }
