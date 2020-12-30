@@ -11,10 +11,12 @@ node {
 
     stage('项目启动'){
       bat '''dir'''
-      bat '''cd C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\test\\target'''
-      bat '''dir'''
-      bat '''docker build -t test:v1.2.6 .'''
-      echo "启动程序成功"
+      bat '''cd \\''' 
+      bat '''dir''' 
+      bat '''d:''' 
+      bat '''dir''' 
+      bat '''cd D:\ui\oss-ui\docker'''  
+      bat '''dir''' 
     }
 
 }
