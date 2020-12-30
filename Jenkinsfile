@@ -15,7 +15,7 @@ node {
       bat '''dir''' 
       bat '''d:''' 
       bat '''dir''' 
-      bat '''cd D:\ui\oss-ui\docker'''  
+      bat '''cd D:\\ui\\oss-ui\\docker'''  
       bat '''dir''' 
     }
 
