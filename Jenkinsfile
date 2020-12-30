@@ -11,7 +11,7 @@ node {
 
     stage('项目启动'){
       bat '''cd ./target && dir /b'''  
-      bat '''dir /b''' 
+      bat '''cd ./target && start javaw -jar crossgate-gateway-0.0.1-SNAPSHOT.jar''' 
     }
 
 }
