@@ -8,13 +8,11 @@ node {
       bat '''mvn clean '''
       bat '''mvn clean install'''
     }
-
-    stage('项目启动'){
-      bat '''cd ./target && dir /b'''  
-    
-    }
     stage('镜像'){
       bat '''docker build -t test:v2 .'''  
+    }
+    stage('镜像'){
+      bat '''docker run -d  -p 8888:8888 test:v2'''  
     }
 
 }
